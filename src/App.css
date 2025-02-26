@@ -1,0 +1,223 @@
+
+.app-container {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #121212; 
+  color: #ffffff; 
+  padding: 20px;
+  min-height: 100vh;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #00c853; 
+  text-shadow: 1px 1px 5px rgba(0, 200, 83, 0.7);
+}
+
+
+.scraped-data-container {
+  max-height: 250px; 
+  overflow-y: auto;  
+  overflow-x: hidden; 
+  background-color: #222;
+  color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: pre-wrap; 
+  word-wrap: break-word; 
+  border: 1px solid #00ff00; 
+}
+
+
+
+.scrape-type-toggle {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.scrape-type-toggle label {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 2px solid #00c853;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.scrape-type-toggle label:hover {
+  background-color: #00c853;
+  color: #121212;
+  transform: scale(1.05);
+}
+
+.scrape-type-toggle input[type="radio"] {
+  display: none;
+}
+
+.scrape-type-toggle input[type="radio"]:checked + label {
+  background-color: #00c853;
+  color: #121212;
+}
+
+button {
+  background-color: #00c853;
+  color: #121212;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #007b34; 
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 10px rgba(0, 200, 83, 0.7);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+.scrape-button {
+  width: 50%;
+  max-width: 300px;
+}
+
+
+.export-section-front {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #00c853;
+  border-radius: 10px;
+  background-color: #1e1e1e; 
+}
+
+
+.export-section-front {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #00c853;
+  border-radius: 10px;
+  background-color: #1e1e1e; 
+}
+
+.export-section-front h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.export-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+pre {
+  background-color: #272727;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  max-height: 300px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+button.db-option {
+  background-color: transparent;
+  border: 2px solid #00c853;
+  color: #00c853;
+  border-radius: 25px;
+}
+
+button.db-option:hover {
+  background-color: #00c853;
+  color: #121212;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 2px solid #00c853;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border-color: #00c853;
+  box-shadow: 0px 0px 8px rgba(0, 200, 83, 0.7);
+  outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder {
+  color: #888888;
+}
+
+
+input[type="email"] {
+  background-color: #1a1a1a; 
+  border: 2px dashed #00c853; 
+}
+
+input[type="email"]:focus {
+  border-color: #00e676;
+  box-shadow: 0px 0px 10px rgba(0, 230, 118, 0.8);
+}
+
+input[type="email"]::placeholder {
+  color: #757575; 
+}
+
+
+@media (max-width: 768px) {
+  .scrape-type-toggle {
+    flex-direction: column;
+  }
+
+  pre {
+    max-height: 700px;   }
+
+
+  button {
+    width: 90%;
+  }
+
+  .scrape-button {
+    width: 90%;
+  }
+
+input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 90%;
+  }
+}
+
+
+
+

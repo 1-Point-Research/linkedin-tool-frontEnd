@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+.signUp-button {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.access-login-heading, .access-otp-heading {
+  text-align: center;
+  font-size: 1.5rem; /* Reduce font size for smaller space */
+ 
+  margin-bottom: 1rem; /* Reduce margin for smaller space */
+  animation: slideDown 0.5s ease-in-out;
+}
+
+.user-access-container {
+  width: 280px;
+  height: 600px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  animation: fadeScaleIn 0.6s ease-in-out;
+  overflow-y: auto;
+}
+
+@keyframes fadeScaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.access-login-form,
+.access-role-access-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.access-input-field {
+  width: 95%;  
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 16px; 
+}
+
+.access-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.access-btn:hover {
+  transform: scale(1.05);
+}
+
+.access-btn:active {
+  transform: scale(0.95);
+}
+
+.access-welcome-text {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.access-role-access-heading {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.back-btn {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+}
