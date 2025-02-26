@@ -1,0 +1,83 @@
+// {
+//   "manifest_version": 3,
+//   "name": "LinkedIn Scraper Extension",
+//   "version": "1.0",
+//   "description": "Scrape LinkedIn profiles, company pages, and job posts.",
+//   "permissions": [
+//     "scripting",
+//     "activeTab",
+//     "storage"
+//   ],
+//   "host_permissions": [
+//     "https://www.linkedin.com/*"
+//   ],
+//   "background": {
+//     "service_worker": "background.js"
+//   },
+//   "action": {
+//     "default_popup": "index.html",
+//     "default_icon": {
+//       "16": "icon.png",
+//       "48": "icon.png",
+//       "128": "icon.png"
+//     }
+//   },
+//   "content_scripts": [
+//     {
+//       "matches": ["https://www.linkedin.com/*"],
+//       "js": ["content.js"]
+//     }
+//   ],
+//   "icons": {
+//     "16": "icon.png",
+//     "48": "icon.png",
+//     "128": "icon.png"
+//   }
+// }
+
+
+
+
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Scraper Extension",
+  "version": "1.2",
+  "description": "Scrape LinkedIn profiles, company pages, and job posts.",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.linkedin.com/in/*",
+    "https://www.linkedin.com/company/*",
+    "https://www.linkedin.com/jobs/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/in/*",
+        "https://www.linkedin.com/company/*",
+        "https://www.linkedin.com/jobs/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
+
